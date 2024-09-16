@@ -1,0 +1,32 @@
+<div class="login-container">
+  <div class="login-box">
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+    <h2>Welcome</h2>
+    <p>Log in to My Company Inc. to continue to My App.</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label for="email">Email address</label>
+      <input id="email" formControlName="email" type="email" placeholder="Email address" />
+
+      <label for="password">Password</label>
+      <input id="password" formControlName="password" type="password" placeholder="Password" />
+
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button type="submit" [disabled]="!loginForm.valid">Continue</button>
+    </form>
+
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <button (click)="loginWithGoogle()" class="google-login">
+      <img src="assets/google-icon.png" alt="Google Icon" />
+      Continue with Google
+    </button>
+  </div>
+</div>

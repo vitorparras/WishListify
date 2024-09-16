@@ -1,0 +1,168 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Reset básico e normalize para consistência entre navegadores */
+
+/* Removendo margens e preenchimentos padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* Melhor consistência de espaçamento */
+  -webkit-text-size-adjust: 100%; /* Evita alterações de tamanho de fonte em alguns dispositivos */
+}
+
+/* Corpo da página */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Fonte padrão do projeto */
+  background-color: #f4f4f4; /* Cor de fundo global */
+  color: #333; /* Cor padrão do texto */
+  font-size: 16px; /* Tamanho de fonte padrão */
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+main {
+  display: block;
+}
+
+/* Cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+  color: #333; /* Cor dos cabeçalhos */
+}
+
+/* Parágrafos */
+p {
+  margin: 0 0 1em; /* Margem inferior padrão */
+}
+
+/* Links */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #007bff; /* Cor padrão dos links */
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #0056b3; /* Cor dos links ao passar o cursor */
+  text-decoration: underline;
+}
+
+/* Imagens */
+img {
+  border-style: none; /* Remove borda ao redor de imagens clicáveis no IE */
+  max-width: 100%; /* Garante que imagens não transbordem */
+  height: auto;
+}
+
+/* Botões e controles de formulário */
+button, input, select, textarea {
+  font-family: inherit; /* Garante que todos os controles de formulário usem a mesma fonte */
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo ao passar o cursor */
+}
+
+/* Campos de formulário */
+input,
+textarea,
+select {
+  border: 1px solid #ccc; /* Borda padrão dos campos */
+  border-radius: 4px; /* Cantos arredondados */
+  padding: 0.5em;
+  background-color: #fff; /* Cor de fundo dos campos */
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff; /* Cor da borda ao focar */
+  outline: none;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical; /* Restringe a redimensionar verticalmente */
+}
+
+/* Tabelas */
+table {
+  border-collapse: collapse; /* Remove bordas duplas em tabelas */
+  width: 100%;
+}
+
+th, td {
+  padding: 0.75em;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f8f9fa; /* Cor de fundo dos cabeçalhos de tabela */
+}
+
+/* Listas */
+ul,
+ol {
+  list-style: none; /* Remove estilo de lista */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em; /* Margem entre itens da lista */
+}
+
+/* Citações e aspas */
+blockquote,
+q {
+  quotes: none; /* Remove as aspas padrão de blockquote e q */
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+/* Código */
+code, pre {
+  font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada para código */
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Visibilidade padrão para elementos ocultos */
+[hidden] {
+  display: none !important;
+}
